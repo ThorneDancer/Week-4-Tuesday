@@ -1,0 +1,61 @@
+/* =============
+    Basics
+============= */
+#basics {
+    background-color: $primary;
+    color: $white;
+
+    > article {
+        background-image: url("../img/hero/hero-2.jpg");
+        background-position: center;
+        background-size: 100%;
+
+        h1 {
+            color: $secondary;
+            font-family: 'Satisfy', cursive;
+            padding: 10px 0 150px;
+            text-align: center;
+        }
+    }
+
+    ul {
+        padding: 30px 0;
+
+        li {
+            display: grid;
+            grid-template-areas: ". . div text ." ". . div text .";
+            grid-template-columns: 10px 10% 10% auto 10px;
+            margin-bottom: 20px;
+
+            div {
+                grid-area: div;
+
+                img {
+                    height: 45px;
+                    width: 35px;
+                }
+
+                h4 {
+                    color: $tertiary;
+                    font-size: rem-calc(14);
+                    padding-top: 10px;
+                }
+            }
+
+            article {
+                grid-area: text;
+
+                h1 {
+                    font-family: 'DM Serif Display', serif;
+                    font-size: rem-calc(24);
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    line-height: rem-calc(20);
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}

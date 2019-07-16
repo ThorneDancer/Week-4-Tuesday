@@ -1,0 +1,124 @@
+/* =============
+    Bestiary
+============= */
+#bestiary {
+    div {
+        > h1 {
+            color: $secondary;
+            font-family: 'Satisfy', cursive;
+            font-size: rem-calc(24);
+            font-weight: 400;
+            text-align: center;
+        }
+
+        ul {
+            li:first-child {
+                background-image: url("../img/bestiary/tarrasque.jpeg");
+                background-position: center;
+                background-size: 100%;
+                margin-bottom: 20px;
+
+                div {
+                    background-color: rgba(49,49,49,0.7);
+                    background-position: center;
+                    background-size: 100%;
+                }
+
+                h1 {
+                    font-family: 'DM Serif Display', serif;
+                    font-size: rem-calc(24);
+                    font-weight: 400;
+                    padding: 17px 0 70px;
+                    text-align: center;
+                }
+
+                p {
+                    color: $white;
+                    padding: 0 10px 180px;
+                    text-align: justify;
+                }
+            }
+
+            li:nth-child(2) {
+                background-image: url("../img/bestiary/yig.jpg");
+                background-position: center;
+                background-size: 100%;
+                margin-bottom: 20px;
+
+                div {
+                    background-color: rgba(49,49,49,0.7);
+                    background-position: center;
+                    background-size: 100%;
+                }
+
+                h1 {
+                    font-family: 'DM Serif Display', serif;
+                    font-size: rem-calc(24);
+                    font-weight: 400;
+                    padding: 17px 0 40px;
+                    text-align: center;
+                }
+
+                p {
+                    color: $white;
+                    padding: 0 10px 100px;
+                    text-align: justify;
+                }
+            }
+
+            li:nth-child(3) {
+                background-image: url("../img/bestiary/elemental.png");
+                background-position: center;
+                background-size: 100%;
+                margin-bottom: 20px;
+
+                div {
+                    background-color: rgba(49,49,49,0.7);
+                    background-position: center;
+                    background-size: 100%;
+                }
+
+                h1 {
+                    color: $white;
+                    font-family: 'DM Serif Display', serif;
+                    font-size: rem-calc(24);
+                    font-weight: 400;
+                    padding: 17px 0 40px;
+                    text-align: center;
+                }
+
+                p {
+                    color: $white;
+                    padding: 0 10px 60px;
+                    text-align: justify;
+                }
+            }
+
+            li:last-child {
+                background-image: url("../img/bestiary/computer.jpg");
+                background-position: center;
+                background-size: 100%;
+                margin-bottom: 60px;
+
+                div {
+                    background-color: rgba(49,49,49,0.7);
+                    background-position: center;
+                    background-size: 100%;
+                }
+
+                h1 {
+                    font-family: 'DM Serif Display', serif;
+                    font-size: rem-calc(24);
+                    font-weight: 400;
+                    padding: 17px 0 40px;
+                    text-align: center;
+                }
+
+                p {
+                    padding: 0 10px 60px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}

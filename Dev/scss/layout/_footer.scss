@@ -1,0 +1,17 @@
+/* =============
+    Footer
+============= */
+footer {
+    color: $primary;
+    font-size: rem-calc(28);
+
+    ul {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin: 20px 10px;
+        }
+    }
+}
