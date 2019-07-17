@@ -2,39 +2,45 @@
     Weekly-1
 ============= */
 #weekly-1 {
-    background-image: url("../img/bestiary/nightwalker.png");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin: 40px 0;
-
-    > section {
-        article:first-child {
-            font-family: 'DM Serif Display', serif;
-            padding-top: 245px;
-            text-align: right;
-
-            h1 {
-                font-size: rem-calc(24);
-                font-weight: 400;
-                margin-top: -2px;
-            }
-
-            h2 {
-                font-size: rem-calc(24);
-                font-weight: 400;
-                margin: 10px 0 245px;
-            }
+    margin-bottom: 40px;
+    >aside{
+        background-image: url("../img/bestiary/nightwalker.png");
+        height: 520px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 40px 0 10px;
+        font-family: 'DM Serif Display', serif;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @include small{
+            height: 780px;
         }
+        h1 {
+            font-size: rem-calc(24);
+            font-weight: 400;
+            margin-top: -2px;
+            text-align: right;
+            padding-right: 10px;
+        }
+        h2 {
+            font-size: rem-calc(24);
+            font-weight: 400;
+            margin: 10px;
+        }
+    }
 
-        article+p {
+     div {
+
+        >p {
             font-size: rem-calc(14);
             line-height: rem-calc(18);
-            padding-bottom: 20px;
+            padding: 20px 0;
             text-align: center;
         }
 
-        p+article {
+        article {
             padding: 0 10px;
             text-align: justify;
 

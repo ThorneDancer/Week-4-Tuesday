@@ -97,8 +97,8 @@ html {
 
 /* ---------------- Media Queries ---------------- */
 // Small devices
-@mixin sm {
-    @media (min-width: #{$screen-sm-min}) {
+@mixin small{
+    @media (min-width: #{$screen-small-min}) {
         @content;
     }
 }
@@ -107,8 +107,8 @@ html {
 //     grid-template-columns: 100%;
 // }
 // Medium devices
-@mixin md {
-    @media (min-width: #{$screen-md-min}) {
+@mixin medium {
+    @media (min-width: #{$screen-medium-min}) {
         @content;
     }
 }
@@ -117,8 +117,8 @@ html {
 //     grid-template-columns: 20% 80%;
 // }
 // Large devices
-@mixin lg {
-    @media (min-width: #{$screen-lg-min}) {
+@mixin large {
+    @media (min-width: #{$screen-large-min}) {
         @content;
     }
 }
@@ -127,8 +127,8 @@ html {
 //     grid-template-columns: repeat(3, 1fr);
 // }
 // Extra large devices
-@mixin xl {
-    @media (min-width: #{$screen-xl-min}) {
+@mixin xlarge {
+    @media (min-width: #{$screen-xlarge-min}) {
         @content;
     }
 }

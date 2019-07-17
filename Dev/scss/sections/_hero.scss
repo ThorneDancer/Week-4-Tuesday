@@ -10,8 +10,9 @@
     article:first-child {
         color: $secondary;
         font-family: 'Satisfy', cursive;
-        padding-top: 68px;
+        padding-top: 88px;
         text-align: center;
+
 
         > h2 {
             font-size: rem-calc(30);
@@ -19,8 +20,11 @@
 
         h2+h1 {
             font-size: rem-calc(44);
-            margin-bottom: 80px;
+            margin-bottom: 100px;
             margin-top: -5px;
+            @include small{
+                margin-bottom: 200px;
+            }
         }
     }
 
@@ -31,11 +35,17 @@
 
         > h1 {
             font-size: rem-calc(24);
+            @include small{
+                font-size: rem-calc(28);
+            }
         }
 
         h1+h2 {
             font-size: rem-calc(18);
             margin-top: -5px;
+            @include small{
+                font-size: rem-calc(22);
+            }
         }
 
         h2:nth-child(3) {
@@ -43,20 +53,20 @@
             font-size: rem-calc(18);
             font-weight: 400;
             margin: 20px 0;
+            @include small{
+                font-size: rem-calc(22);
+            }
         }
     }
 
     article:last-child {
         text-align: justify;
-
-        p {
-            padding-bottom: 30px;
+        @include small{
+            padding: 0 5%;
         }
-
-        p:nth-child(2) {
-            padding-bottom: 0;
+        p{
+            line-height: rem-calc(25);
         }
-
         > nav {
             padding: 10px 0 40px;
 
