@@ -399,14 +399,21 @@ footer {
   background-image: url("../img/hero/hero-1.jpg");
   background-position: top;
   background-repeat: no-repeat;
-  background-size: 100%; }
+  background-size: 100%;
+  margin-bottom: 40px; }
   #hero article:first-child {
     color: #F71818;
     font-family: 'Satisfy', cursive;
     padding-top: 88px;
     text-align: center; }
+    @media (min-width: 713px) {
+      #hero article:first-child {
+        padding-top: 120px; } }
     #hero article:first-child > h2 {
       font-size: 1.875rem; }
+      @media (min-width: 713px) {
+        #hero article:first-child > h2 {
+          font-size: 2.375rem; } }
     #hero article:first-child h2 + h1 {
       font-size: 2.75rem;
       margin-bottom: 100px;
@@ -414,6 +421,10 @@ footer {
       @media (min-width: 537px) {
         #hero article:first-child h2 + h1 {
           margin-bottom: 200px; } }
+      @media (min-width: 713px) {
+        #hero article:first-child h2 + h1 {
+          font-size: 3.25rem;
+          margin-bottom: 250px; } }
   #hero article:nth-child(2) {
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
@@ -423,12 +434,18 @@ footer {
       @media (min-width: 537px) {
         #hero article:nth-child(2) > h1 {
           font-size: 1.75rem; } }
+      @media (min-width: 713px) {
+        #hero article:nth-child(2) > h1 {
+          font-size: 2.125rem; } }
     #hero article:nth-child(2) h1 + h2 {
       font-size: 1.125rem;
       margin-top: -5px; }
       @media (min-width: 537px) {
         #hero article:nth-child(2) h1 + h2 {
           font-size: 1.375rem; } }
+      @media (min-width: 713px) {
+        #hero article:nth-child(2) h1 + h2 {
+          font-size: 1.875rem; } }
     #hero article:nth-child(2) h2:nth-child(3) {
       font-family: 'Teko', sans-serif;
       font-size: 1.125rem;
@@ -437,6 +454,9 @@ footer {
       @media (min-width: 537px) {
         #hero article:nth-child(2) h2:nth-child(3) {
           font-size: 1.375rem; } }
+      @media (min-width: 713px) {
+        #hero article:nth-child(2) h2:nth-child(3) {
+          font-size: 1.875rem; } }
   #hero article:last-child {
     text-align: justify; }
     @media (min-width: 537px) {
@@ -444,36 +464,72 @@ footer {
         padding: 0 5%; } }
     #hero article:last-child p {
       line-height: 1.5625rem; }
-    #hero article:last-child > nav {
-      padding: 10px 0 40px; }
-      #hero article:last-child > nav a {
+      @media (min-width: 713px) {
+        #hero article:last-child p {
+          font-size: 1.125rem;
+          line-height: 1.75rem;
+          column-count: 2;
+          column-gap: 5%; } }
+      #hero article:last-child p a {
         color: #8D8D8D;
         font-size: 1.125rem; }
+        @media (min-width: 713px) {
+          #hero article:last-child p a {
+            font-size: 1.25rem; } }
 
 /* =============
     Basics
 ============= */
 #basics {
   background-color: #313131;
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 40px; }
   #basics > article {
     background-image: url("../img/hero/hero-2.jpg");
     height: 260px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
+    @media (min-width: 713px) {
+      #basics > article {
+        height: 420px; } }
     #basics > article h1 {
       color: #F71818;
       font-family: 'Satisfy', cursive;
       padding: 20px 0 150px;
       text-align: center; }
+      @media (min-width: 713px) {
+        #basics > article h1 {
+          font-size: 2.375rem;
+          padding-top: 50px; } }
   #basics ul {
     padding: 30px 0; }
+    @media (min-width: 713px) {
+      #basics ul {
+        display: grid;
+        grid-template-areas: ". left-1 . right-1 ." ". left-2 . right-2 .";
+        grid-template-columns: 5% auto 5% auto 5%; } }
+    @media (min-width: 713px) {
+      #basics ul li:nth-child(1) {
+        grid-area: left-1; } }
+    @media (min-width: 713px) {
+      #basics ul li:nth-child(2) {
+        grid-area: right-1; } }
+    @media (min-width: 713px) {
+      #basics ul li:nth-child(3) {
+        grid-area: left-2; } }
+    @media (min-width: 713px) {
+      #basics ul li:nth-child(4) {
+        grid-area: right-2; } }
     #basics ul li {
       display: grid;
       grid-template-areas: ". . div . text ." ". . div . text .";
       grid-template-columns: 10px 10% 10% 10px auto 10px;
       margin-bottom: 30px; }
+      @media (min-width: 713px) {
+        #basics ul li {
+          grid-template-areas: "div . text" "div . text";
+          grid-template-columns: 28% 1px auto; } }
       #basics ul li div {
         grid-area: div; }
         #basics ul li div img {
@@ -483,6 +539,10 @@ footer {
             #basics ul li div img {
               height: 80px;
               width: 60px; } }
+          @media (min-width: 713px) {
+            #basics ul li div img {
+              height: 100px;
+              width: 80px; } }
         #basics ul li div h4 {
           color: #8D8D8D;
           font-size: 0.875rem;
@@ -496,6 +556,9 @@ footer {
         #basics ul li article p {
           line-height: 1.5625rem;
           text-align: justify; }
+          @media (min-width: 713px) {
+            #basics ul li article p {
+              font-weight: 300; } }
 
 /* =============
     Weekly-1
@@ -542,7 +605,8 @@ footer {
   font-family: 'Satisfy', cursive;
   font-size: 1.5rem;
   font-weight: 400;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 20px; }
 
 #bestiary div ul li:first-child {
   margin-bottom: 20px;

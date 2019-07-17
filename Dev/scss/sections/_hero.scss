@@ -6,24 +6,34 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100%;
+    margin-bottom: 40px;
 
     article:first-child {
         color: $secondary;
         font-family: 'Satisfy', cursive;
         padding-top: 88px;
         text-align: center;
-
+        @include medium {
+            padding-top: 120px;
+        }
 
         > h2 {
             font-size: rem-calc(30);
+            @include medium {
+                font-size: rem-calc(38);
+            }
         }
 
         h2+h1 {
             font-size: rem-calc(44);
             margin-bottom: 100px;
             margin-top: -5px;
-            @include small{
+            @include small {
                 margin-bottom: 200px;
+            }
+            @include medium {
+                font-size: rem-calc(52);
+                margin-bottom: 250px;
             }
         }
     }
@@ -35,16 +45,22 @@
 
         > h1 {
             font-size: rem-calc(24);
-            @include small{
+            @include small {
                 font-size: rem-calc(28);
+            }
+            @include medium {
+                font-size: rem-calc(34);
             }
         }
 
         h1+h2 {
             font-size: rem-calc(18);
             margin-top: -5px;
-            @include small{
+            @include small {
                 font-size: rem-calc(22);
+            }
+            @include medium {
+                font-size: rem-calc(30);
             }
         }
 
@@ -53,26 +69,36 @@
             font-size: rem-calc(18);
             font-weight: 400;
             margin: 20px 0;
-            @include small{
+            @include small {
                 font-size: rem-calc(22);
+            }
+            @include medium {
+                font-size: rem-calc(30);
             }
         }
     }
 
     article:last-child {
         text-align: justify;
-        @include small{
+        @include small {
             padding: 0 5%;
         }
-        p{
+
+        p {
             line-height: rem-calc(25);
-        }
-        > nav {
-            padding: 10px 0 40px;
+            @include medium {
+                font-size: rem-calc(18);
+                line-height: rem-calc(28);
+                column-count: 2;
+                column-gap: 5%;
+            }
 
             a {
                 color: $tertiary;
                 font-size: rem-calc(18);
+                @include medium {
+                    font-size: rem-calc(20);
+                }
             }
         }
     }
