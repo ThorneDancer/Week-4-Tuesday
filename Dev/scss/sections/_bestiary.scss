@@ -2,6 +2,9 @@
 //     Bestiary
 // ============= */
 #bestiary{
+    @include medium{
+        margin-bottom: 40px;
+    }
     div{
         >h1{
             color: $secondary;
@@ -10,6 +13,9 @@
             font-weight: 400;
             text-align: center;
             margin-bottom: 20px;
+            @include medium{
+                font-size: rem-calc(34);
+            }
         }
         ul{
             li:first-child{
@@ -19,6 +25,9 @@
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
+                @include medium{
+                    height: 780px;
+                }
                 article{
                     background-color: rgba(49,49,49,0.7);
                     display:none;
@@ -44,11 +53,17 @@
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
+                @include medium{
+                    height: 780px;
+                }
                 article{
                     transition: 0.5s;
                     background-color: rgba(49,49,49,0.7);
                     height: 366px;
                     display:block;
+                    @include medium{
+                        height: 780px;
+                    }
                 }
                 h1 {
                     font-family: 'DM Serif Display', serif;
@@ -57,11 +72,20 @@
                     padding: 17px 0 70px;
                     text-align: center;
                     color: $white;
+                    @include medium{
+                        font-size: rem-calc(34);
+                        padding: 60px 0 250px;
+                    }
                 }
                 p {
                     color: $white;
                     padding: 0 10px 120px;
                     text-align: justify;
+                    @include medium{
+                        font-size: rem-calc(26);
+                        padding: 0 5%;
+                        line-height: rem-calc(35);
+                    }
                 }
             }
             li:nth-child(2){
@@ -71,6 +95,9 @@
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
+                @include medium{
+                    height: 550px;
+                }
                 article{
                     background-color: rgba(49,49,49,0.7);
                     display:none;
@@ -96,11 +123,17 @@
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
+                @include medium{
+                    height: 550px;
+                }
                 article{
                     transition: 0.5s;
                     background-color: rgba(49,49,49,0.7);
                     height: 366px;
                     display:block;
+                    @include medium{
+                        height: 550px;
+                    }
                 }
                 h1 {
                     font-family: 'DM Serif Display', serif;
@@ -109,11 +142,20 @@
                     padding: 17px 0 70px;
                     text-align: center;
                     color: $white;
+                    @include medium{
+                        font-size: rem-calc(34);
+                        padding: 60px 0 100px;
+                    }
                 }
                 p {
                     color: $white;
                     padding: 0 10px 140px;
                     text-align: justify;
+                    @include medium{
+                        font-size: rem-calc(26);
+                        padding: 0 5%;
+                        line-height: rem-calc(35);
+                    }
                 }
             }
             li:nth-child(3){
@@ -123,6 +165,9 @@
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
+                @include medium{
+                    height: 550px;
+                }
                 article{
                     background-color: rgba(49,49,49,0.7);
                     display:none;
@@ -148,11 +193,17 @@
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
+                @include medium{
+                    height: 550px;
+                }
                 article{
                     transition: 0.5s;
                     background-color: rgba(49,49,49,0.7);
                     height: 366px;
                     display:block;
+                    @include medium{
+                        height: 550px;
+                    }
                 }
                 h1 {
                     font-family: 'DM Serif Display', serif;
@@ -161,11 +212,20 @@
                     padding: 17px 0 70px;
                     text-align: center;
                     color: $white;
+                    @include medium{
+                        font-size: rem-calc(34);
+                        padding: 60px 0 100px;
+                    }
                 }
                 p {
                     color: $white;
                     padding: 0 10px 160px;
                     text-align: justify;
+                    @include medium{
+                        font-size: rem-calc(26);
+                        padding: 0 5%;
+                        line-height: rem-calc(35);
+                    }
                 }
             }
             li:nth-child(4){
@@ -175,6 +235,9 @@
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
+                @include medium{
+                    height: 550px;
+                }
                 article{
                     background-color: rgba(49,49,49,0.7);
                     display:none;
@@ -200,11 +263,17 @@
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
+                @include medium{
+                    height: 550px;
+                }
                 article{
                     transition: 0.5s;
                     background-color: rgba(49,49,49,0.7);
                     height: 366px;
                     display:block;
+                    @include medium{
+                        height: 550px;
+                    }
                 }
                 h1 {
                     font-family: 'DM Serif Display', serif;
@@ -213,11 +282,20 @@
                     padding: 17px 0 70px;
                     text-align: center;
                     color: $white;
+                    @include medium{
+                        font-size: rem-calc(34);
+                        padding: 60px 0 100px;
+                    }
                 }
                 p {
                     color: $white;
                     padding: 0 10px 160px;
                     text-align: justify;
+                    @include medium{
+                        font-size: rem-calc(26);
+                        padding: 0 5%;
+                        line-height: rem-calc(35);
+                    }
                 }
             }
         }
