@@ -7,6 +7,9 @@
     background-repeat: no-repeat;
     background-size: 100%;
     margin-bottom: 40px;
+    @include large {
+        margin-bottom: 80px;
+    }
 
     article:first-child {
         color: $secondary;
@@ -16,11 +19,17 @@
         @include medium {
             padding-top: 120px;
         }
+        @include large {
+            padding-top: 190px;
+        }
 
         > h2 {
             font-size: rem-calc(30);
             @include medium {
                 font-size: rem-calc(38);
+            }
+            @include large {
+                font-size: rem-calc(54);
             }
         }
 
@@ -34,6 +43,10 @@
             @include medium {
                 font-size: rem-calc(52);
                 margin-bottom: 250px;
+            }
+            @include large {
+                font-size: rem-calc(68);
+                margin-bottom: 280px;
             }
         }
     }
@@ -51,6 +64,9 @@
             @include medium {
                 font-size: rem-calc(34);
             }
+            @include large {
+                font-size: rem-calc(40);
+            }
         }
 
         h1+h2 {
@@ -61,6 +77,9 @@
             }
             @include medium {
                 font-size: rem-calc(30);
+            }
+            @include medium {
+                font-size: rem-calc(36);
             }
         }
 
@@ -75,6 +94,9 @@
             @include medium {
                 font-size: rem-calc(30);
             }
+            @include medium {
+                font-size: rem-calc(36);
+            }
         }
     }
 
@@ -87,10 +109,14 @@
         p {
             line-height: rem-calc(25);
             @include medium {
-                font-size: rem-calc(18);
-                line-height: rem-calc(28);
                 column-count: 2;
                 column-gap: 5%;
+                font-size: rem-calc(18);
+                line-height: rem-calc(28);
+            }
+            @include large {
+                font-size: rem-calc(25);
+                line-height: rem-calc(34);
             }
 
             a {
@@ -98,6 +124,9 @@
                 font-size: rem-calc(18);
                 @include medium {
                     font-size: rem-calc(20);
+                }
+                @include large {
+                    font-size: rem-calc(25);
                 }
             }
         }

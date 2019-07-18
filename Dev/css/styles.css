@@ -380,6 +380,17 @@ header {
   font-family: 'Satisfy', cursive;
   justify-content: space-between;
   padding: 10px; }
+  header aside {
+    display: none; }
+    @media (min-width: 713px) {
+      header aside {
+        display: flex; } }
+    header aside a {
+      font-family: 'Teko', sans-serif;
+      padding: 0 15px; }
+  @media (min-width: 713px) {
+    header nav a {
+      display: none; } }
   header h1 {
     font-size: 1.25rem;
     font-weight: 400; }
@@ -400,6 +411,10 @@ header {
     grid-template-columns: repeat(2, 1fr);
     padding-top: 30px; } }
 
+@media (min-width: 938px) {
+  footer {
+    padding-top: 60px; } }
+
 footer nav {
   display: none; }
   footer nav section {
@@ -411,17 +426,28 @@ footer nav {
       border: none;
       height: 20px;
       margin-left: 40px;
-      width: 220px;
-      padding-top: 2px; }
+      padding-top: 2px;
+      width: 220px; }
+      @media (min-width: 938px) {
+        footer nav section input {
+          height: 35px;
+          margin-left: 20px;
+          width: 350px; } }
     footer nav section h1 {
       background-color: #8D8D8D;
       border-radius: 5px;
       color: #313131;
       font-size: 0.75rem;
       padding: 5px 10px; }
+      @media (min-width: 938px) {
+        footer nav section h1 {
+          font-size: 1.25rem; } }
   footer nav p {
     padding: 15px 0;
     text-align: center; }
+    @media (min-width: 938px) {
+      footer nav p {
+        font-size: 1.125rem; } }
   @media (min-width: 713px) {
     footer nav {
       display: inline-block;
@@ -435,12 +461,15 @@ footer ul {
     footer ul {
       justify-content: flex-end; } }
   footer ul li {
-    margin: 20px 10px;
+    color: #313131;
     font-size: 1.75rem;
-    color: #313131; }
+    margin: 20px 10px; }
     @media (min-width: 713px) {
       footer ul li {
         font-size: 2.5rem; } }
+    @media (min-width: 938px) {
+      footer ul li {
+        font-size: 3.375rem; } }
 
 /* =============
     Hero
@@ -451,6 +480,9 @@ footer ul {
   background-repeat: no-repeat;
   background-size: 100%;
   margin-bottom: 40px; }
+  @media (min-width: 938px) {
+    #hero {
+      margin-bottom: 80px; } }
   #hero article:first-child {
     color: #F71818;
     font-family: 'Satisfy', cursive;
@@ -459,11 +491,17 @@ footer ul {
     @media (min-width: 713px) {
       #hero article:first-child {
         padding-top: 120px; } }
+    @media (min-width: 938px) {
+      #hero article:first-child {
+        padding-top: 190px; } }
     #hero article:first-child > h2 {
       font-size: 1.875rem; }
       @media (min-width: 713px) {
         #hero article:first-child > h2 {
           font-size: 2.375rem; } }
+      @media (min-width: 938px) {
+        #hero article:first-child > h2 {
+          font-size: 3.375rem; } }
     #hero article:first-child h2 + h1 {
       font-size: 2.75rem;
       margin-bottom: 100px;
@@ -475,6 +513,10 @@ footer ul {
         #hero article:first-child h2 + h1 {
           font-size: 3.25rem;
           margin-bottom: 250px; } }
+      @media (min-width: 938px) {
+        #hero article:first-child h2 + h1 {
+          font-size: 4.25rem;
+          margin-bottom: 280px; } }
   #hero article:nth-child(2) {
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
@@ -487,6 +529,9 @@ footer ul {
       @media (min-width: 713px) {
         #hero article:nth-child(2) > h1 {
           font-size: 2.125rem; } }
+      @media (min-width: 938px) {
+        #hero article:nth-child(2) > h1 {
+          font-size: 2.5rem; } }
     #hero article:nth-child(2) h1 + h2 {
       font-size: 1.125rem;
       margin-top: -5px; }
@@ -496,6 +541,9 @@ footer ul {
       @media (min-width: 713px) {
         #hero article:nth-child(2) h1 + h2 {
           font-size: 1.875rem; } }
+      @media (min-width: 713px) {
+        #hero article:nth-child(2) h1 + h2 {
+          font-size: 2.25rem; } }
     #hero article:nth-child(2) h2:nth-child(3) {
       font-family: 'Teko', sans-serif;
       font-size: 1.125rem;
@@ -507,6 +555,9 @@ footer ul {
       @media (min-width: 713px) {
         #hero article:nth-child(2) h2:nth-child(3) {
           font-size: 1.875rem; } }
+      @media (min-width: 713px) {
+        #hero article:nth-child(2) h2:nth-child(3) {
+          font-size: 2.25rem; } }
   #hero article:last-child {
     text-align: justify; }
     @media (min-width: 537px) {
@@ -516,16 +567,23 @@ footer ul {
       line-height: 1.5625rem; }
       @media (min-width: 713px) {
         #hero article:last-child p {
-          font-size: 1.125rem;
-          line-height: 1.75rem;
           column-count: 2;
-          column-gap: 5%; } }
+          column-gap: 5%;
+          font-size: 1.125rem;
+          line-height: 1.75rem; } }
+      @media (min-width: 938px) {
+        #hero article:last-child p {
+          font-size: 1.5625rem;
+          line-height: 2.125rem; } }
       #hero article:last-child p a {
         color: #8D8D8D;
         font-size: 1.125rem; }
         @media (min-width: 713px) {
           #hero article:last-child p a {
             font-size: 1.25rem; } }
+        @media (min-width: 938px) {
+          #hero article:last-child p a {
+            font-size: 1.5625rem; } }
 
 /* =============
     Basics
@@ -534,15 +592,21 @@ footer ul {
   background-color: #313131;
   color: #fff;
   margin-bottom: 40px; }
+  @media (min-width: 938px) {
+    #basics {
+      margin-bottom: 80px; } }
   #basics > article {
     background-image: url("../img/hero/hero-2.jpg");
-    height: 260px;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-repeat: no-repeat; }
+    height: 260px; }
     @media (min-width: 713px) {
       #basics > article {
         height: 420px; } }
+    @media (min-width: 938px) {
+      #basics > article {
+        height: 520px; } }
     #basics > article h1 {
       color: #F71818;
       font-family: 'Satisfy', cursive;
@@ -552,6 +616,9 @@ footer ul {
         #basics > article h1 {
           font-size: 2.375rem;
           padding-top: 50px; } }
+      @media (min-width: 938px) {
+        #basics > article h1 {
+          font-size: 3.375rem; } }
   #basics ul {
     padding: 30px 0; }
     @media (min-width: 713px) {
@@ -580,6 +647,9 @@ footer ul {
         #basics ul li {
           grid-template-areas: "div . text" "div . text";
           grid-template-columns: 28% 1px auto; } }
+      @media (min-width: 938px) {
+        #basics ul li {
+          grid-template-columns: 20% 5px auto; } }
       #basics ul li div {
         grid-area: div; }
         #basics ul li div img {
@@ -593,22 +663,37 @@ footer ul {
             #basics ul li div img {
               height: 100px;
               width: 80px; } }
+          @media (min-width: 938px) {
+            #basics ul li div img {
+              height: 120px;
+              width: 90px; } }
         #basics ul li div h4 {
           color: #8D8D8D;
           font-size: 0.875rem;
           padding-top: 10px; }
+          @media (min-width: 938px) {
+            #basics ul li div h4 {
+              font-size: 1.375rem;
+              font-weight: 400; } }
       #basics ul li article {
         grid-area: text; }
         #basics ul li article h1 {
           font-family: 'DM Serif Display', serif;
           font-size: 1.5rem;
           margin-bottom: 10px; }
+          @media (min-width: 938px) {
+            #basics ul li article h1 {
+              font-size: 2.5rem; } }
         #basics ul li article p {
           line-height: 1.5625rem;
           text-align: justify; }
           @media (min-width: 713px) {
             #basics ul li article p {
               font-weight: 300; } }
+          @media (min-width: 938px) {
+            #basics ul li article p {
+              font-size: 1.75rem;
+              line-height: 1.875rem; } }
 
 /* =============
     Weekly-1
@@ -619,32 +704,41 @@ footer ul {
     #weekly-1 {
       grid-area: 1; } }
   #weekly-1 > aside {
+    align-items: center;
     background-image: url("../img/bestiary/nightwalker.png");
-    height: 520px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 40px 0 10px;
-    font-family: 'DM Serif Display', serif;
     display: flex;
+    font-family: 'DM Serif Display', serif;
+    height: 520px;
     justify-content: flex-end;
-    align-items: center; }
+    margin: 40px 0 10px; }
     @media (min-width: 537px) {
       #weekly-1 > aside {
         height: 780px; } }
     @media (min-width: 713px) {
       #weekly-1 > aside {
         height: 620px; } }
+    @media (min-width: 938px) {
+      #weekly-1 > aside {
+        height: 780px; } }
     #weekly-1 > aside h1 {
       font-size: 1.5rem;
       font-weight: 400;
       margin-top: -2px;
-      text-align: right;
-      padding-right: 10px; }
+      padding-right: 10px;
+      text-align: right; }
+      @media (min-width: 938px) {
+        #weekly-1 > aside h1 {
+          font-size: 2.375rem; } }
     #weekly-1 > aside h2 {
       font-size: 1.5rem;
       font-weight: 400;
       margin: 10px; }
+      @media (min-width: 938px) {
+        #weekly-1 > aside h2 {
+          font-size: 2.375rem; } }
   #weekly-1 div > p {
     font-size: 0.875rem;
     line-height: 1.125rem;
@@ -654,6 +748,10 @@ footer ul {
       #weekly-1 div > p {
         font-size: 1rem;
         line-height: 1.25rem; } }
+    @media (min-width: 938px) {
+      #weekly-1 div > p {
+        font-size: 1.25rem;
+        line-height: 1.375rem; } }
   #weekly-1 div article {
     padding: 0 10px;
     text-align: justify; }
@@ -661,6 +759,11 @@ footer ul {
       #weekly-1 div article {
         font-size: 1.125rem;
         line-height: 1.5625rem; } }
+    @media (min-width: 938px) {
+      #weekly-1 div article {
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1.375rem; } }
     #weekly-1 div article p:first-child {
       padding-bottom: 20px; }
 
@@ -668,272 +771,368 @@ footer ul {
   #bestiary {
     margin-bottom: 40px; } }
 
+@media (min-width: 938px) {
+  #bestiary {
+    margin-bottom: 80px; } }
+
 #bestiary div > h1 {
   color: #F71818;
   font-family: 'Satisfy', cursive;
   font-size: 1.5rem;
   font-weight: 400;
-  text-align: center;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  text-align: center; }
   @media (min-width: 713px) {
     #bestiary div > h1 {
       font-size: 2.125rem; } }
+  @media (min-width: 938px) {
+    #bestiary div > h1 {
+      font-size: 3.375rem;
+      padding-bottom: 40px; } }
+
+@media (min-width: 938px) {
+  #bestiary div ul {
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0 1%; } }
 
 #bestiary div ul li:first-child {
-  margin-bottom: 20px;
   background-image: url("../img/bestiary/tarrasque.jpeg");
-  height: 366px;
-  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 366px;
+  margin-bottom: 20px; }
   @media (min-width: 713px) {
     #bestiary div ul li:first-child {
       height: 780px; } }
+  @media (min-width: 938px) {
+    #bestiary div ul li:first-child {
+      height: 500px; } }
   #bestiary div ul li:first-child article {
     background-color: rgba(49, 49, 49, 0.7);
     display: none; }
   #bestiary div ul li:first-child h1 {
+    color: #fff;
     font-family: 'DM Serif Display', serif;
     font-size: 1.5rem;
     font-weight: 400;
     padding: 17px 0 70px;
-    text-align: center;
-    color: #fff; }
+    text-align: center; }
   #bestiary div ul li:first-child p {
     color: #fff;
     padding: 0 10px 180px;
     text-align: justify; }
 
-#bestiary div ul li:first-child:hover, #bestiary div ul li:first-child:active {
-  margin-bottom: 20px;
+#bestiary div ul li:first-child:active,
+#bestiary div ul li:first-child:hover {
   background-image: url("../img/bestiary/tarrasque.jpeg");
-  height: 366px;
-  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 366px;
+  margin-bottom: 20px; }
   @media (min-width: 713px) {
-    #bestiary div ul li:first-child:hover, #bestiary div ul li:first-child:active {
+    #bestiary div ul li:first-child:active,
+    #bestiary div ul li:first-child:hover {
       height: 780px; } }
-  #bestiary div ul li:first-child:hover article, #bestiary div ul li:first-child:active article {
-    transition: 0.5s;
+  @media (min-width: 938px) {
+    #bestiary div ul li:first-child:active,
+    #bestiary div ul li:first-child:hover {
+      height: 500px; } }
+  #bestiary div ul li:first-child:active article,
+  #bestiary div ul li:first-child:hover article {
     background-color: rgba(49, 49, 49, 0.7);
+    display: block;
     height: 366px;
-    display: block; }
+    transition: 0.5s; }
     @media (min-width: 713px) {
-      #bestiary div ul li:first-child:hover article, #bestiary div ul li:first-child:active article {
+      #bestiary div ul li:first-child:active article,
+      #bestiary div ul li:first-child:hover article {
         height: 780px; } }
-  #bestiary div ul li:first-child:hover h1, #bestiary div ul li:first-child:active h1 {
+    @media (min-width: 938px) {
+      #bestiary div ul li:first-child:active article,
+      #bestiary div ul li:first-child:hover article {
+        height: 500px; } }
+  #bestiary div ul li:first-child:active h1,
+  #bestiary div ul li:first-child:hover h1 {
+    color: #fff;
     font-family: 'DM Serif Display', serif;
     font-size: 1.5rem;
     font-weight: 400;
     padding: 17px 0 70px;
-    text-align: center;
-    color: #fff; }
+    text-align: center; }
     @media (min-width: 713px) {
-      #bestiary div ul li:first-child:hover h1, #bestiary div ul li:first-child:active h1 {
+      #bestiary div ul li:first-child:active h1,
+      #bestiary div ul li:first-child:hover h1 {
         font-size: 2.125rem;
         padding: 60px 0 250px; } }
-  #bestiary div ul li:first-child:hover p, #bestiary div ul li:first-child:active p {
+    @media (min-width: 938px) {
+      #bestiary div ul li:first-child:active h1,
+      #bestiary div ul li:first-child:hover h1 {
+        padding: 60px 0 90px; } }
+  #bestiary div ul li:first-child:active p,
+  #bestiary div ul li:first-child:hover p {
     color: #fff;
     padding: 0 10px 120px;
     text-align: justify; }
     @media (min-width: 713px) {
-      #bestiary div ul li:first-child:hover p, #bestiary div ul li:first-child:active p {
+      #bestiary div ul li:first-child:active p,
+      #bestiary div ul li:first-child:hover p {
         font-size: 1.625rem;
-        padding: 0 5%;
-        line-height: 2.1875rem; } }
+        line-height: 2.1875rem;
+        padding: 0 5%; } }
 
 #bestiary div ul li:nth-child(2) {
-  margin-bottom: 20px;
   background-image: url("../img/bestiary/yig.jpg");
-  height: 366px;
-  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 366px;
+  margin-bottom: 20px; }
   @media (min-width: 713px) {
     #bestiary div ul li:nth-child(2) {
       height: 550px; } }
+  @media (min-width: 938px) {
+    #bestiary div ul li:nth-child(2) {
+      height: 500px; } }
   #bestiary div ul li:nth-child(2) article {
     background-color: rgba(49, 49, 49, 0.7);
     display: none; }
   #bestiary div ul li:nth-child(2) h1 {
+    color: #fff;
     font-family: 'DM Serif Display', serif;
     font-size: 1.5rem;
     font-weight: 400;
     padding: 17px 0 70px;
-    text-align: center;
-    color: #fff; }
+    text-align: center; }
   #bestiary div ul li:nth-child(2) p {
     color: #fff;
     padding: 0 10px 180px;
     text-align: justify; }
 
-#bestiary div ul li:nth-child(2):hover, #bestiary div ul li:nth-child(2):active {
-  margin-bottom: 20px;
+#bestiary div ul li:nth-child(2):active,
+#bestiary div ul li:nth-child(2):hover {
   background-image: url("../img/bestiary/yig.jpg");
-  height: 366px;
-  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 366px;
+  margin-bottom: 20px; }
   @media (min-width: 713px) {
-    #bestiary div ul li:nth-child(2):hover, #bestiary div ul li:nth-child(2):active {
+    #bestiary div ul li:nth-child(2):active,
+    #bestiary div ul li:nth-child(2):hover {
       height: 550px; } }
-  #bestiary div ul li:nth-child(2):hover article, #bestiary div ul li:nth-child(2):active article {
-    transition: 0.5s;
+  @media (min-width: 938px) {
+    #bestiary div ul li:nth-child(2):active,
+    #bestiary div ul li:nth-child(2):hover {
+      height: 500px; } }
+  #bestiary div ul li:nth-child(2):active article,
+  #bestiary div ul li:nth-child(2):hover article {
     background-color: rgba(49, 49, 49, 0.7);
+    display: block;
     height: 366px;
-    display: block; }
+    transition: 0.5s; }
     @media (min-width: 713px) {
-      #bestiary div ul li:nth-child(2):hover article, #bestiary div ul li:nth-child(2):active article {
+      #bestiary div ul li:nth-child(2):active article,
+      #bestiary div ul li:nth-child(2):hover article {
         height: 550px; } }
-  #bestiary div ul li:nth-child(2):hover h1, #bestiary div ul li:nth-child(2):active h1 {
+    @media (min-width: 938px) {
+      #bestiary div ul li:nth-child(2):active article,
+      #bestiary div ul li:nth-child(2):hover article {
+        height: 500px; } }
+  #bestiary div ul li:nth-child(2):active h1,
+  #bestiary div ul li:nth-child(2):hover h1 {
+    color: #fff;
     font-family: 'DM Serif Display', serif;
     font-size: 1.5rem;
     font-weight: 400;
     padding: 17px 0 70px;
-    text-align: center;
-    color: #fff; }
+    text-align: center; }
     @media (min-width: 713px) {
-      #bestiary div ul li:nth-child(2):hover h1, #bestiary div ul li:nth-child(2):active h1 {
+      #bestiary div ul li:nth-child(2):active h1,
+      #bestiary div ul li:nth-child(2):hover h1 {
         font-size: 2.125rem;
         padding: 60px 0 100px; } }
-  #bestiary div ul li:nth-child(2):hover p, #bestiary div ul li:nth-child(2):active p {
+  #bestiary div ul li:nth-child(2):active p,
+  #bestiary div ul li:nth-child(2):hover p {
     color: #fff;
     padding: 0 10px 140px;
     text-align: justify; }
     @media (min-width: 713px) {
-      #bestiary div ul li:nth-child(2):hover p, #bestiary div ul li:nth-child(2):active p {
+      #bestiary div ul li:nth-child(2):active p,
+      #bestiary div ul li:nth-child(2):hover p {
         font-size: 1.625rem;
-        padding: 0 5%;
-        line-height: 2.1875rem; } }
+        line-height: 2.1875rem;
+        padding: 0 5%; } }
 
 #bestiary div ul li:nth-child(3) {
-  margin-bottom: 20px;
   background-image: url("../img/bestiary/elemental.png");
-  height: 366px;
-  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 366px;
+  margin-bottom: 20px; }
   @media (min-width: 713px) {
     #bestiary div ul li:nth-child(3) {
       height: 550px; } }
+  @media (min-width: 938px) {
+    #bestiary div ul li:nth-child(3) {
+      height: 500px; } }
   #bestiary div ul li:nth-child(3) article {
     background-color: rgba(49, 49, 49, 0.7);
     display: none; }
   #bestiary div ul li:nth-child(3) h1 {
+    color: #fff;
     font-family: 'DM Serif Display', serif;
     font-size: 1.5rem;
     font-weight: 400;
     padding: 17px 0 70px;
-    text-align: center;
-    color: #fff; }
+    text-align: center; }
   #bestiary div ul li:nth-child(3) p {
     color: #fff;
     padding: 0 10px 180px;
     text-align: justify; }
 
-#bestiary div ul li:nth-child(3):hover, #bestiary div ul li:nth-child(3):active {
-  margin-bottom: 20px;
+#bestiary div ul li:nth-child(3):active,
+#bestiary div ul li:nth-child(3):hover {
   background-image: url("../img/bestiary/elemental.png");
-  height: 366px;
-  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 366px;
+  margin-bottom: 20px; }
   @media (min-width: 713px) {
-    #bestiary div ul li:nth-child(3):hover, #bestiary div ul li:nth-child(3):active {
+    #bestiary div ul li:nth-child(3):active,
+    #bestiary div ul li:nth-child(3):hover {
       height: 550px; } }
-  #bestiary div ul li:nth-child(3):hover article, #bestiary div ul li:nth-child(3):active article {
-    transition: 0.5s;
+  @media (min-width: 938px) {
+    #bestiary div ul li:nth-child(3):active,
+    #bestiary div ul li:nth-child(3):hover {
+      height: 500px; } }
+  #bestiary div ul li:nth-child(3):active article,
+  #bestiary div ul li:nth-child(3):hover article {
     background-color: rgba(49, 49, 49, 0.7);
+    display: block;
     height: 366px;
-    display: block; }
+    transition: 0.5s; }
     @media (min-width: 713px) {
-      #bestiary div ul li:nth-child(3):hover article, #bestiary div ul li:nth-child(3):active article {
+      #bestiary div ul li:nth-child(3):active article,
+      #bestiary div ul li:nth-child(3):hover article {
         height: 550px; } }
-  #bestiary div ul li:nth-child(3):hover h1, #bestiary div ul li:nth-child(3):active h1 {
+    @media (min-width: 938px) {
+      #bestiary div ul li:nth-child(3):active article,
+      #bestiary div ul li:nth-child(3):hover article {
+        height: 500px; } }
+  #bestiary div ul li:nth-child(3):active h1,
+  #bestiary div ul li:nth-child(3):hover h1 {
+    color: #fff;
     font-family: 'DM Serif Display', serif;
     font-size: 1.5rem;
     font-weight: 400;
     padding: 17px 0 70px;
-    text-align: center;
-    color: #fff; }
+    text-align: center; }
     @media (min-width: 713px) {
-      #bestiary div ul li:nth-child(3):hover h1, #bestiary div ul li:nth-child(3):active h1 {
+      #bestiary div ul li:nth-child(3):active h1,
+      #bestiary div ul li:nth-child(3):hover h1 {
         font-size: 2.125rem;
         padding: 60px 0 100px; } }
-  #bestiary div ul li:nth-child(3):hover p, #bestiary div ul li:nth-child(3):active p {
+  #bestiary div ul li:nth-child(3):active p,
+  #bestiary div ul li:nth-child(3):hover p {
     color: #fff;
     padding: 0 10px 160px;
     text-align: justify; }
     @media (min-width: 713px) {
-      #bestiary div ul li:nth-child(3):hover p, #bestiary div ul li:nth-child(3):active p {
+      #bestiary div ul li:nth-child(3):active p,
+      #bestiary div ul li:nth-child(3):hover p {
         font-size: 1.625rem;
-        padding: 0 5%;
-        line-height: 2.1875rem; } }
+        line-height: 2.1875rem;
+        padding: 0 5%; } }
 
 #bestiary div ul li:nth-child(4) {
-  margin-bottom: 20px;
   background-image: url("../img/bestiary/computer.jpg");
-  height: 366px;
-  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 366px;
+  margin-bottom: 20px; }
   @media (min-width: 713px) {
     #bestiary div ul li:nth-child(4) {
       height: 550px; } }
+  @media (min-width: 938px) {
+    #bestiary div ul li:nth-child(4) {
+      height: 500px; } }
   #bestiary div ul li:nth-child(4) article {
     background-color: rgba(49, 49, 49, 0.7);
     display: none; }
   #bestiary div ul li:nth-child(4) h1 {
+    color: #fff;
     font-family: 'DM Serif Display', serif;
     font-size: 1.5rem;
     font-weight: 400;
     padding: 17px 0 70px;
-    text-align: center;
-    color: #fff; }
+    text-align: center; }
   #bestiary div ul li:nth-child(4) p {
     color: #fff;
     padding: 0 10px 180px;
     text-align: justify; }
 
-#bestiary div ul li:nth-child(4):hover, #bestiary div ul li:nth-child(4):active {
-  margin-bottom: 20px;
+#bestiary div ul li:nth-child(4):active,
+#bestiary div ul li:nth-child(4):hover {
   background-image: url("../img/bestiary/computer.jpg");
-  height: 366px;
-  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 366px;
+  margin-bottom: 20px; }
   @media (min-width: 713px) {
-    #bestiary div ul li:nth-child(4):hover, #bestiary div ul li:nth-child(4):active {
+    #bestiary div ul li:nth-child(4):active,
+    #bestiary div ul li:nth-child(4):hover {
       height: 550px; } }
-  #bestiary div ul li:nth-child(4):hover article, #bestiary div ul li:nth-child(4):active article {
-    transition: 0.5s;
+  @media (min-width: 938px) {
+    #bestiary div ul li:nth-child(4):active,
+    #bestiary div ul li:nth-child(4):hover {
+      height: 500px; } }
+  #bestiary div ul li:nth-child(4):active article,
+  #bestiary div ul li:nth-child(4):hover article {
     background-color: rgba(49, 49, 49, 0.7);
+    display: block;
     height: 366px;
-    display: block; }
+    transition: 0.5s; }
     @media (min-width: 713px) {
-      #bestiary div ul li:nth-child(4):hover article, #bestiary div ul li:nth-child(4):active article {
+      #bestiary div ul li:nth-child(4):active article,
+      #bestiary div ul li:nth-child(4):hover article {
         height: 550px; } }
-  #bestiary div ul li:nth-child(4):hover h1, #bestiary div ul li:nth-child(4):active h1 {
+    @media (min-width: 938px) {
+      #bestiary div ul li:nth-child(4):active article,
+      #bestiary div ul li:nth-child(4):hover article {
+        height: 500px; } }
+  #bestiary div ul li:nth-child(4):active h1,
+  #bestiary div ul li:nth-child(4):hover h1 {
+    color: #fff;
     font-family: 'DM Serif Display', serif;
     font-size: 1.5rem;
     font-weight: 400;
     padding: 17px 0 70px;
-    text-align: center;
-    color: #fff; }
+    text-align: center; }
     @media (min-width: 713px) {
-      #bestiary div ul li:nth-child(4):hover h1, #bestiary div ul li:nth-child(4):active h1 {
+      #bestiary div ul li:nth-child(4):active h1,
+      #bestiary div ul li:nth-child(4):hover h1 {
         font-size: 2.125rem;
         padding: 60px 0 100px; } }
-  #bestiary div ul li:nth-child(4):hover p, #bestiary div ul li:nth-child(4):active p {
+  #bestiary div ul li:nth-child(4):active p,
+  #bestiary div ul li:nth-child(4):hover p {
     color: #fff;
     padding: 0 10px 160px;
     text-align: justify; }
     @media (min-width: 713px) {
-      #bestiary div ul li:nth-child(4):hover p, #bestiary div ul li:nth-child(4):active p {
+      #bestiary div ul li:nth-child(4):active p,
+      #bestiary div ul li:nth-child(4):hover p {
         font-size: 1.625rem;
-        padding: 0 5%;
-        line-height: 2.1875rem; } }
+        line-height: 2.1875rem;
+        padding: 0 5%; } }
 
 /* =============
     Weekly-2
@@ -952,14 +1151,23 @@ footer ul {
       font-size: 1.75rem;
       font-weight: 400;
       padding-bottom: 10px; }
+      @media (min-width: 938px) {
+        #weekly-2 article:first-child h1 {
+          font-size: 2.375rem; } }
     #weekly-2 article:first-child h1 + h2 {
       font-size: 1.25rem;
       font-weight: 400;
       padding-bottom: 0; }
+      @media (min-width: 938px) {
+        #weekly-2 article:first-child h1 + h2 {
+          font-size: 1.75rem; } }
     #weekly-2 article:first-child > h2 {
       font-size: 1rem;
       font-weight: 400;
       padding-bottom: 10px; }
+      @media (min-width: 938px) {
+        #weekly-2 article:first-child > h2 {
+          font-size: 1.75rem; } }
   #weekly-2 article:nth-child(2) {
     padding-bottom: 20px; }
     #weekly-2 article:nth-child(2) p {
@@ -968,6 +1176,10 @@ footer ul {
         #weekly-2 article:nth-child(2) p {
           font-size: 1.125rem;
           line-height: 1.5625rem; } }
+      @media (min-width: 938px) {
+        #weekly-2 article:nth-child(2) p {
+          font-size: 1.5625rem;
+          line-height: 1.875rem; } }
   #weekly-2 article:nth-child(3) {
     padding-bottom: 20px; }
     #weekly-2 article:nth-child(3) p {
@@ -976,6 +1188,10 @@ footer ul {
         #weekly-2 article:nth-child(3) p {
           font-size: 1.125rem;
           line-height: 1.5625rem; } }
+      @media (min-width: 938px) {
+        #weekly-2 article:nth-child(3) p {
+          font-size: 1.5625rem;
+          line-height: 1.875rem; } }
       #weekly-2 article:nth-child(3) p span {
         font-weight: 700; }
   #weekly-2 article:nth-child(4) {
@@ -987,12 +1203,20 @@ footer ul {
         #weekly-2 article:nth-child(4) h1 {
           font-size: 1.125rem;
           line-height: 1.5625rem; } }
+      @media (min-width: 938px) {
+        #weekly-2 article:nth-child(4) h1 {
+          font-size: 1.6875rem;
+          line-height: 1.875rem; } }
     #weekly-2 article:nth-child(4) p {
       padding-bottom: 3px; }
       @media (min-width: 713px) {
         #weekly-2 article:nth-child(4) p {
           font-size: 1.125rem;
           line-height: 1.5625rem; } }
+      @media (min-width: 938px) {
+        #weekly-2 article:nth-child(4) p {
+          font-size: 1.5625rem;
+          line-height: 1.875rem; } }
       #weekly-2 article:nth-child(4) p span {
         font-weight: 700; }
   @media (min-width: 713px) {
@@ -1007,8 +1231,8 @@ footer ul {
       border: none;
       height: 20px;
       margin-left: 40px;
-      width: 220px;
-      padding-top: 2px; }
+      padding-top: 2px;
+      width: 220px; }
     #weekly-2 nav section h1 {
       background-color: #8D8D8D;
       border-radius: 5px;
